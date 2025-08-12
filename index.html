@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Maison Honorine — Gaufres & Crêpes</title>
+  <meta name="description" content="Maison Honorine — Gaufres, crêpes et douceurs. Commandes à emporter, livraison et événements.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family: 'Georgia', serif; color:#222;background:#fff}
+    a{text-decoration:none;color:inherit}
+    :root{--accent:#C85A3F;--accent-2:#F2B95C;--muted:#6b6b6b}
+    .container{max-width:1100px;margin:0 auto;padding:22px}
+    header{border-bottom:1px solid #f3e9e6;background:linear-gradient(180deg, rgba(200,90,63,0.03), transparent)}
+    nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;color:var(--accent);font-size:20px}
+    .nav-links{display:flex;gap:14px}
+    .btn{background:var(--accent);color:#fff;padding:9px 14px;border-radius:10px;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:30px 0;align-items:center}
+    .hero h1{font-size:clamp(26px,4vw,42px)}
+    .hero p{color:var(--muted);line-height:1.5}
+
+    .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+    .card{border:1px solid #f1dcd7;border-radius:12px;padding:16px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+    .card h3{color:var(--accent);margin-bottom:8px}
+    .price{font-weight:700;color:var(--accent-2)}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+
+    .order{display:grid;gap:12px;margin:20px 0}
+    form{display:grid;gap:8px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #eee}
+    button[type=submit]{padding:12px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700}
+
+    .info{display:flex;flex-direction:column;gap:8px;color:var(--muted);margin-top:8px}
+
+    footer{padding:18px 0;color:var(--muted);border-top:1px solid #f3e9e6;margin-top:28px}
+
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 420px}
+      .order-grid{display:grid;grid-template-columns:1fr 360px;gap:16px}
+    }
+  </style>
+</head>
+<body><meta name="google-site-verification" content="BAyWWh0Lw5aUJSMflSxWd4I3Uz_BDqvR-8fQ5HMErHg" />
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Maison Honorine</div>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#commande">Commande</a>
+          <a class="btn" href="#commande">Commander</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Gaufres & Crêpes artisanales — Maison Honorine</h1>
+        <p>Des gaufres croustillantes, des crêpes moelleuses et des garnitures maison — faites pour régaler tes papilles. Commande à emporter ou livraison à Abidjan.</p>
+        <div class="info">
+          <div><strong>Horaires:</strong> Lun–Dim 8h–20h</div>
+          <div><strong>Adresse:</strong> Abidjan — Zone ( yopougon)</div>
+          <div><strong>Contact:</strong> WhatsApp +225 07 98 70 45 57</div>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center">
+        <img src="C:\Users\HABIB\Downloads\Minimalist Beige And Black Restaurant Brand Logo.png" alt="gaufre" style="width:100%;height:260px;object-fit:cover;border-radius:8px;">
+        <p style="margin-top:10px;color:var(--muted)"> </p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2 style="margin-top:12px;">Menu</h2>
+      <div class="menu">
+        <div class="card">
+          <h3>LA GOURMANDE SUCRÉE</h3>
+          <p>6 Grandes Crêpes au Chocolat/Caramel
+- Kinder/Cérélac/Oréo.</p>
+          <p class="price">5.000F</p>
+        </div>
+        <div class="card">
+          <h3>LA GOURMANDE SALÉE</h3>
+          <p>7 Grandes Crêpes à La crème -
+Poulet/Viande hachée/Jambons - Fromage.</p>
+          <p class="price">10.000F</p>
+        </div>
+        <div class="card">
+          <h3>CREPES SUCRÉS</h3>
+          <p>Nature </p><p class="price">300F</p>
+           <p> Chocolat (Nutella) </p><p class="price">400F</p>                                            
+           <p>  Gourmande (Chocolat ou caramel/kinder)</p><p class="price">500F</p>
+          
+        </div>
+        <div class="card">
+          <h3>CRÊPES SALÉES  </h3>
+          <p>Poulet </p><p class="price">600F</p>
+          <p>Jambon et fromage </p><p class="price">800F</p>
+          <p>Viande hachée </p><p class="price">1.000F</p>
+         </div>
+        <div class="card">
+          <h3>GAUFRES SUCRÉES</h3>
+          <p>Mini-Gaufre </p>Barquette de 3<p class="price">1.000 F</p
+          <p>Gaufre Sucette </p>Barquette de 3 <p><p class="price">2.000F</p>                          
+          <p>Gaufre Cœur </p>Barquette de 3 <p><p class="price"> 2.000F</p> 
+          <p>Pizza-Chocolat </p>Entier<p><p class="price"> 2.000F</p> 
+        
+        </div>
+        <div class="card">
+          <h3>GAUFRES SALÉES</h3>
+          <p>Panini-Gaufre</p><p class="price">2.000 F</p>
+          <p>Hot-Gaufre</p><p class="price">1.500F</p>
+          <p>Croque Mr</p>Barquette de 5<p class="price">2.000F</p>
+         
+         </div>
+        <div class="card">
+        <h3>TOPINGS</h3>
+        <p>Kinder Bueno </p>
+        <p>Cérélac </p>
+        <p>M&Ms </p>
+        <p>Oréo </p>
+        <p>Spéculose lotus </p>
+        
+        </div>
+        <div class="card">
+        <h3>NAPPAGES</h3>
+        <p>Chocolat noir </p>
+        <p>Chocolat blanc</p>
+        <p>Caramal </p>
+        <p>Nutella </p>
+
+         
+     </div>
+    </section>
+
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="C:\Users\LENOVO\Downloads\4fe0586e-ab83-421d-a7b6-f82289f767f6.JPG"=Gaufre+1" alt="photo1" onclick="openLightbox(this.src)">
+        <img src="C:\Users\LENOVO\Downloads\1c896e6b-539b-4b68-a917-95dce55cbff8.JPG"=Crepe+1" alt="photo2" onclick="openLightbox(this.src)">
+        <img src="https://via.placeholder.com/600x400?text=Garniture" alt="photo3" onclick="openLightbox(this.src)">
+        <img src="https://via.placeholder.com/600x400?text=Boutique" alt="photo4" onclick="openLightbox(this.src)">
+      </div>
+    </section>
+
+    <section id="commande">
+      <h2 style="margin-top:18px">Commander</h2>
+      <div class="order-grid">
+        <div class="card">
+          <p style="color:var(--muted)">Remplis le formulaire ci‑dessous pour une commande rapide. Pour livraison, indique ton adresse complète.</p>
+          <form id="orderForm">
+            <input type="text" id="custName" placeholder="Ton nom" required>
+            <input type="text" id="custPhone" placeholder="Téléphone (WhatsApp)" required>
+            <select id="item">
+              <option value="Gaufre Classique">Gaufre Classique — 2 000 FCFA</option>
+              <option value="Gaufre Gourmande">Gaufre Gourmande — 3 500 FCFA</option>
+              <option value="Crepe Simple">Crêpe Simple — 1 500 FCFA</option>
+              <option value="Crepe Garnie">Crêpe Garnie — 2 800 FCFA</option>
+            </select>
+            <input type="number" id="qty" min="1" value="1">
+            <textarea id="address" rows="3" placeholder="Adresse pour livraison (si nécessaire)"></textarea>
+            <button type="submit">Envoyer la commande</button>
+          </form>
+          <p id="orderMsg" style="margin-top:8px;color:var(--muted)"></p>
+        </div>
+
+        <div class="card">
+          <h3>Infos & options</h3>
+          <p style="color:var(--muted)">Retrait en boutique ou livraison (zone Abidjan). Paiement en espèces ou Mobile Money à la livraison. Pour commandes d'événements (+20 gaufres/crêpes), contacte-nous pour un devis spécial.</p>
+          <p><strong>Tel / WhatsApp:</strong> +225 07 98 70 45 57</p>
+          <p><strong>Email:</strong> mouniabado101@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© <strong>Maison Honorine</strong> — Toutes douceurs ©</div>
+        <div style="color:var(--muted)">Suivez-nous: Instagram:maison.honorine_gaufrerie• Facebook</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function openLightbox(src){
+      const overlay = document.createElement('div');
+      overlay.style.position='fixed';overlay.style.inset=0;overlay.style.background='rgba(0,0,0,0.7)';overlay.style.display='flex';overlay.style.alignItems='center';overlay.style.justifyContent='center';overlay.style.zIndex=9999;
+      const img = document.createElement('img');img.src=src;img.style.maxWidth='90%';img.style.maxHeight='90%';img.style.borderRadius='8px';
+      overlay.appendChild(img);
+      overlay.addEventListener('click',()=>overlay.remove());
+      document.body.appendChild(overlay);
+    }
+
+    document.getElementById('orderForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const item = document.getElementById('item').value;
+      const qty = document.getElementById('qty').value;
+      const address = document.getElementById('address').value;
+
+      // Calcul simple du total (basé sur prix affichés)
+      const priceMap = { 'Gaufre Classique':2000, 'Gaufre Gourmande':3500, 'Crepe Simple':1500, 'Crepe Garnie':2800 };
+      const total = (priceMap[item] || 0) * Number(qty);
+
+      document.getElementById('orderMsg').textContent = `Merci ${name} — ta commande (${qty} x ${item}) a été reçue. Total estimé: ${total.toLocaleString()} FCFA. Nous t'appellerons/écrirons sur WhatsApp.`;
+      this.reset();
+    });
+  </script>
+</body>
+</html>
